@@ -13,8 +13,8 @@ public class Startable implements Runnable {
     @Override
     public void run() {   
        //setting netbeans IDE as default
-       IDEInformation.setIDE("netbeans");
-       
+       IDEInformation.setIDE("netbeans"); 
+       //jumping into our main access point. The main method
        de.uos.application.Main.Main(null, 0);
        System.out.println("test");
     }
