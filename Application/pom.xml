@@ -97,7 +97,11 @@
             </plugin>
         </plugins>
     </build>
-    
+    <parent>
+        <groupId>de.uos</groupId>
+        <artifactId>de.uos.Java-IDE-API-AbstractionLayer</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
     
     
 </project>

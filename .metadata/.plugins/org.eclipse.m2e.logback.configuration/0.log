@@ -1,0 +1,64 @@
+2017-05-17 19:06:37,945 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-05-17 19:12:00,129 [Worker-30] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-05-17 19:12:01,598 [Worker-30] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.jar
+2017-05-17 19:12:01,847 [Worker-30] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.jar
+2017-05-17 19:12:02,490 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: de.uos:de.uos.Application:1.0-SNAPSHOT @ C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\Application\pom.xml.
+2017-05-17 19:12:03,204 [Worker-28] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: de.uos:de.uos.AbstractionLayer:1.0.0-SNAPSHOT @ C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\AbstractionLayer\pom.xml.
+2017-05-17 19:12:03,707 [Worker-30] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Application/src/main/java
+2017-05-17 19:12:03,708 [Worker-30] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Application/src
+2017-05-17 19:12:03,748 [Worker-30] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /Application/src/test/java because it overlaps with /Application/src
+2017-05-17 19:12:04,294 [Worker-30] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2017-05-17 19:12:04,915 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:12:04,920 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-05-17 19:12:04,943 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:12:04,943 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\AbstractionLayer\src\test\resources
+2017-05-17 19:12:04,967 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:12:04,968 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-05-17 19:12:04,978 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:12:04,978 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\Application\src\test\resources
+2017-05-17 19:15:48,500 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: de.uos:de.uos.AbstractionLayer:1.0.0-SNAPSHOT @ C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\AbstractionLayer\pom.xml.
+2017-05-17 19:15:49,058 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:15:49,064 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-05-17 19:15:49,097 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:15:49,104 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\AbstractionLayer\src\test\resources
+2017-05-17 19:15:49,245 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: de.uos:de.uos.Application:1.0-SNAPSHOT @ C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\Application\pom.xml.
+2017-05-17 19:15:49,349 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:15:49,350 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-05-17 19:15:49,358 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:15:49,358 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\Application\src\test\resources
+2017-05-17 19:15:50,311 [Worker-34] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: de.uos:de.uos.Application:1.0-SNAPSHOT @ C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\Application\pom.xml.
+2017-05-17 19:15:50,804 [Worker-34] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: de.uos:de.uos.AbstractionLayer:1.0.0-SNAPSHOT @ C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\AbstractionLayer\pom.xml.
+2017-05-17 19:15:51,313 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:15:51,319 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-05-17 19:15:51,352 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:15:51,358 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\AbstractionLayer\src\test\resources
+2017-05-17 19:15:51,951 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:15:51,951 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-05-17 19:15:51,956 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:15:51,956 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\AbstractionLayer\src\test\resources
+2017-05-17 19:15:51,979 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:15:51,980 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-05-17 19:15:51,995 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:15:51,995 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\Application\src\test\resources
+2017-05-17 19:19:04,760 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:19:04,761 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-05-17 19:19:04,763 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:19:04,763 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\AbstractionLayer\src\test\resources
+2017-05-17 19:19:53,464 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: de.uos:de.uos.Application:1.0-SNAPSHOT @ C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\Application\pom.xml.
+2017-05-17 19:19:53,487 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:19:53,491 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-05-17 19:19:53,492 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:19:53,495 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\Application\src\test\resources
+2017-05-17 19:19:56,862 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: de.uos:de.uos.Application:1.0-SNAPSHOT @ C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\Application\pom.xml.
+2017-05-17 19:19:56,892 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:19:56,897 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-05-17 19:19:56,902 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:19:56,902 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\Application\src\test\resources
+2017-05-17 19:20:37,305 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:20:37,307 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-05-17 19:20:37,309 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:20:37,309 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\AbstractionLayer\src\test\resources
+2017-05-17 19:20:37,324 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:20:37,324 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-05-17 19:20:37,326 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-17 19:20:37,326 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\thoma\Documents\workspace\Java-IDE-API-AbstractionLayer\Application\src\test\resources

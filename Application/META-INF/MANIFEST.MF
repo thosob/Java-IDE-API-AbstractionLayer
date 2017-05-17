@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Application
+Bundle-SymbolicName: Application
+Bundle-Version: 1.0.0.qualifier
+Export-Package: de.uos.application
+Bundle-Vendor: de.uos
+AutoUpdate-Show-In-Client: true
+
