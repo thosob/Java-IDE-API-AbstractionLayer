@@ -2,7 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="AbstractionLayer/src"/>
 	<classpathentry kind="src" path="Application/src"/>
-	<classpathentry kind="lib" path="AbstractionLayer/target/AbstractionLayer-1.0-SNAPSHOT.jar"/>
 	<classpathentry kind="lib" path="build/cluster/modules/de-uos-AbstractionLayer.jar"/>
 	<classpathentry kind="lib" path="build/cluster/modules/de-uos-application.jar"/>
 	<classpathentry kind="lib" path="build/public-package-jars/de-uos-application.jar"/>
