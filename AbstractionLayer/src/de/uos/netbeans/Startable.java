@@ -15,8 +15,7 @@ public class Startable implements Runnable {
        //setting netbeans IDE as default
        IDEInformation.setIDE("netbeans"); 
        //jumping into our main access point. The main method
-       de.uos.application.Main.Main(null, 0);
-       System.out.println("test");
+       de.uos.application.Main.Main(null, 0);     
     }
     
 }
