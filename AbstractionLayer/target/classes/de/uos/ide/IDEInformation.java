@@ -25,15 +25,15 @@ public class IDEInformation {
      * @return if setting the ide did work
      */
     public static boolean setIDE(String IDEName){
-        if(IDE.equalsIgnoreCase("netbeans")){
+        if(IDEName.equalsIgnoreCase("netbeans")){
             IDE = IDEName.toLowerCase();
             return true;
         }
-        if(IDE.equalsIgnoreCase("eclipse")){
+        if(IDEName.equalsIgnoreCase("eclipse")){
             IDE = IDEName.toLowerCase();
             return true;
         }
-        if(IDE.equalsIgnoreCase("intellij")){
+        if(IDEName.equalsIgnoreCase("intellij")){
             IDE = IDEName.toLowerCase();
             return true;
         }        

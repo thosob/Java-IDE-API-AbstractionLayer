@@ -5,4 +5,46 @@
 <project name="AbstractionLayer" basedir=".">
     <description>Builds the module suite AbstractionLayer.</description>
     <import file="nbproject/build-impl.xml"/>
+    
+    <target name="build" depends="-init,branding,release,-hide-excluded-modules" description="Build all modules in the suite.">
+        <subant target="netbeans" buildpath="${modules.sorted}" inheritrefs="false" inheritall="false">
+            <property name="cluster.path.evaluated" value="${cluster.path.evaluated}"/> <!-- Just for speed of pre-7.0 projects -->
+            <property name="harness.taskdefs.done" value="${harness.taskdefs.done}"/> <!-- optimization -->
+        </subant>
+        <antcall target="mvn" />
+    </target>
+       
+
+    
+     
+    <!-- being platform independent, but maven must be installed in environment -->
+    <condition property="Windows">
+        <os family="windows" />
+    </condition>
+    <condition property="Linux">
+        <os family="unix" />
+    </condition>
+    <condition property="Mac">
+        <os family="mac" />
+    </condition>
+    
+    <target name="mvn" depends="mvnWindows, mvnLinux, mvnMac" />
+
+    <target name="mvnWindows" if="Windows">
+        <exec dir="." executable="cmd">
+            <arg line="/c mvn clean install" />
+        </exec>
+    </target>
+
+    <target name="mvnLinux" if="Linux">
+        <exec dir="." executable="sh">
+            <arg line="-c 'mvn clean install'" />
+        </exec>
+    </target>
+    <!-- this is untested, could be wrong -->
+    <target name="mvnMac" if="Mac">
+        <exec dir="." executable="sh">
+            <arg line="-c 'mvn clean install'" />
+        </exec>
+    </target>
 </project>

@@ -41,8 +41,9 @@
         </processjsannotation>
         <mkdir dir="${basedir}/build/classes" />
         <!-- after setting up netbeans we need to call our maven file, which calls the gradle file -->
-        <antcall target="mvn" /> 
+        <antcall target="mvn" />
     </target>
+    
     <!-- being platform independent, but maven must be installed in environment -->
     <condition property="Windows">
         <os family="windows" />
@@ -72,5 +73,5 @@
         <exec dir="." executable="sh">
             <arg line="-c 'mvn clean install'" />
         </exec>
-    </target>
+    </target> 
 </project>

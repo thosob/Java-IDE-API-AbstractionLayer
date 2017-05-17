@@ -3,23 +3,27 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.uos</groupId>
-    <artifactId>AbstractionLayer</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>de.uos.AbstractionLayer</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <tycho-version>3.11.0.v20160603-1336</tycho-version>
+        <tycho-version>1.0.0</tycho-version> <!--06-Feb-2017-->
     </properties>
-  
+    <parent>
+        <groupId>de.uos</groupId>
+        <artifactId>de.uos.Java-IDE-API-AbstractionLayer</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
 	
     <!-- only Eclipse and Java dependencies -->
     <dependencies>
         <dependency>
-            <groupId>org.eclipse.tycho</groupId>
+            <groupId>org.eclipse.osgi</groupId>
             <artifactId>org.eclipse.osgi</artifactId>
-            <version>${tycho-version}</version>
+            <version>3.7.1</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.ui</groupId>
@@ -51,10 +55,15 @@
                     <include>**/eclipse/**</include>
                     <include>**/AbstractionLayer/**</include>
                     <include>**/ide/**</include>
+                    <include>**/META-INF/**</include>
+                    <include>.classpath</include>
+                    <include>.project</include>
+                    <include>.settings</include>
                 </includes>
                 <excludes>
                     <exclude>**/netbeans/**</exclude>
                     <exclude>**/intellij/**</exclude>
+                    <exclude>MANIFEST.MF</exclude>
                 </excludes>
             </resource>
         </resources>
@@ -69,26 +78,25 @@
                 <groupId>org.eclipse.tycho</groupId>
                 <artifactId>target-platform-configuration</artifactId>
                 <version>${tycho-version}</version>
-                <environments>
-                    <environment>
-                        <os>win32</os>
-                        <ws>win32</ws>
-                        <arch>x86</arch>
-                    </environment>
-                    <environment>
-                        <os>linux</os>
-                        <ws>gtk</ws>
-                        <arch>x86_64</arch>
-                    </environment>
-                    <environment>
-                        <os>macosx</os>
-                        <ws>cocoa</ws>
-                        <arch>x86_64</arch>
-                    </environment>
-                </environments>
-                <testSuite>Bundle-SymbolicName-of-bundleContaining-Tests</testSuite>
-                <testClass>FullyQualifiedNameOfTheTestClass</testClass>
-            </configuration>
+                <configuration>
+                    <environments>
+                        <environment>
+                            <os>win32</os>
+                            <ws>win32</ws>
+                            <arch>x86</arch>
+                        </environment>
+                        <environment>
+                            <os>linux</os>
+                            <ws>gtk</ws>
+                            <arch>x86_64</arch>
+                        </environment>
+                        <environment>
+                            <os>macosx</os>
+                            <ws>cocoa</ws>
+                            <arch>x86_64</arch>
+                        </environment>
+                    </environments>
+                </configuration>                            
             </plugin>	
             <!-- Create IntelliJ using Gradle -->
             <plugin>
