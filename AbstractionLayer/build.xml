@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+<!-- for some information on what you could do (e.g. targets to override). -->
+<!-- If you delete this file and reopen the project it will be recreated. -->
+<project name="de.uos.AbstractionLayer" default="netbeans"
+	basedir=".">
+	<description>Builds, tests, and runs the project
+		de.uos.AbstractionLayer.</description>
+	<import file="nbproject/build-impl.xml" />
+	<!-- hook into compile process -->
+	<target name="compile">
+		<!-- define our basic fileset -->
+		<fileset dir="${basedir}">
+			<!-- we have to exclude intellij and eclipse folders, because they can't 
+				be found by netbeans, since netbeans is only capable of wrapping jars in 
+				modules, which is not working in every case -->
+			<exclude name="**/eclipse/**" />
+			<exclude name="**/intellij/**" />
+                        <exclude name="**/META-INF/**" />
+                        <include name="**/netbeans/**" />
+                        <include name="**/ide/**"/>
+		</fileset>
+		<mkdir dir="${basedir}/build/classes" />
+		<!-- after setting up netbeans we need to call our maven file, which calls 
+			the gradle file
+		<antcall target="mvn" /> -->		
+	</target>
+
+
+	<!-- being platform independent, but maven must be installed in environment -->
+	<condition property="Windows">
+		<os family="windows" />
+	</condition>
+	<condition property="Linux">
+		<os family="unix" />
+	</condition>
+	<condition property="Mac">
+		<os family="mac" />
+	</condition>
+	<target name="mvn" depends="mvnWindows, mvnLinux, mvnMac" />
+
+	<target name="mvnWindows" if="Windows">
+		<exec dir="." executable="cmd">
+			<arg line="/c mvn clean install" />
+		</exec>
+	</target>
+
+	<target name="mvnLinux" if="Linux">
+		<exec dir="." executable="sh">
+			<arg line="-c 'mvn clean install'" />
+		</exec>
+	</target>
+	<!-- this is untested, could be wrong -->
+	<target name="mvnMac" if="Mac">
+		<exec dir="." executable="sh">
+			<arg line="-c 'mvn clean install'" />
+		</exec>
+	</target>
+</project>

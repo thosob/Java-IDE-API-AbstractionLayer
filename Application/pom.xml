@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>de.uos</groupId>
+    <artifactId>Application</artifactId>
+    <version>1.0-SNAPSHOT</version>   
+   
+    
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.sonatype.tycho</groupId>
+                <artifactId>tycho-maven-plugin</artifactId>
+                <extensions>true</extensions>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.tycho</groupId>
+                <artifactId>maven-osgi-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.tycho</groupId>
+                <artifactId>target-platform-configuration</artifactId>
+                <configuration>
+                    <resolver>p2</resolver>
+                    <target>
+                        <artifact>
+                            <groupId>org.insurance</groupId>
+                            <artifactId>insurance-target</artifactId>
+                            <version>1.0.0-SNAPSHOT</version>
+                            <classifier>helios</classifier>
+                        </artifact>
+                    </target>
+                    <ignoreTychoRepositories>true</ignoreTychoRepositories>
+                    <environments>
+                        ...
+                    </environments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
