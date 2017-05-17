@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: AbstractionLayer
+Bundle-SymbolicName: AbstractionLayer
+Bundle-Version: 1.0.0.qualifier
+Export-Package: AbstractionLayer,
+ de.uos.eclipse,
+ de.uos.ide
+Bundle-Vendor: de.uos
+AutoUpdate-Show-In-Client: true
+OpenIDE-Module: de.uos.AbstractionLayer
+OpenIDE-Module-Specification-Version: 1.0

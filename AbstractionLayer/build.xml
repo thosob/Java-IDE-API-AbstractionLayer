@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+<!-- for some information on what you could do (e.g. targets to override). -->
+<!-- If you delete this file and reopen the project it will be recreated. -->
+<project name="de.uos.AbstractionLayer" default="netbeans"
+         basedir=".">
+    <property name="src" location="src/" />
+    <property name="build" location="build/" />
+    <property name="dist" location ="dist/" />
+    <description>Builds, tests, and runs the project
+        de.uos.AbstractionLayer.</description>
+    <import file="nbproject/build-impl.xml" />
+    <!-- hook into compile process -->
+    <target name="compile">
+        <mkdir dir="${build.classes.dir}"/>
+        <depend srcdir="${src.dir}" destdir="${build.classes.dir}" cache="${build.dir}/depcache">
+            <classpath refid="cp"/>
+        </depend>
+        <property name="javac.fork" value="false"/>
+        <nb-javac srcdir="${src.dir}" destdir="${build.classes.dir}" debug="${build.compiler.debug}" debuglevel="${build.compiler.debuglevel}" encoding="UTF-8"
+                  deprecation="${build.compiler.deprecation}" optimize="${build.compiler.optimize}" source="${javac.source}" target="${javac.target}" includeantruntime="false"
+                  fork="${javac.fork}">
+            <classpath refid="cp"/>
+            <compilerarg line="${javac.compilerargs}"/>
+            <processorpath refid="processor.cp"/>
+            <exclude name="**/eclipse/**"></exclude>
+            <exclude name="**/META-INF/**"></exclude>
+            <exclude name="**/intellij/**"></exclude>
+        </nb-javac>
+        <copy todir="${build.classes.dir}">
+            <fileset dir="${src.dir}" excludes="${jar-excludes}"/>
+        </copy>
+        <processjsannotation classes="${build.classes.dir}" asm="${asm.jar}">
+            <classpath refid="cp"/>
+        </processjsannotation>
+        <mkdir dir="${basedir}/build/classes" />
+        <!-- after setting up netbeans we need to call our maven file, which calls the gradle file -->
+        <antcall target="mvn" /> 
+    </target>
+    <!-- being platform independent, but maven must be installed in environment -->
+    <condition property="Windows">
+        <os family="windows" />
+    </condition>
+    <condition property="Linux">
+        <os family="unix" />
+    </condition>
+    <condition property="Mac">
+        <os family="mac" />
+    </condition>
+    
+    <target name="mvn" depends="mvnWindows, mvnLinux, mvnMac" />
+
+    <target name="mvnWindows" if="Windows">
+        <exec dir="." executable="cmd">
+            <arg line="/c mvn clean install" />
+        </exec>
+    </target>
+
+    <target name="mvnLinux" if="Linux">
+        <exec dir="." executable="sh">
+            <arg line="-c 'mvn clean install'" />
+        </exec>
+    </target>
+    <!-- this is untested, could be wrong -->
+    <target name="mvnMac" if="Mac">
+        <exec dir="." executable="sh">
+            <arg line="-c 'mvn clean install'" />
+        </exec>
+    </target>
+</project>

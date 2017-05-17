@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+AutoUpdate-Show-In-Client: true
+OpenIDE-Module: de.uos.application
+OpenIDE-Module-Localizing-Bundle: de/uos/application/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+
