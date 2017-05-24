@@ -1,5 +1,6 @@
 package de.uos.application;
 
+import com.intellij.openapi.actionSystem.AnActionEvent;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 

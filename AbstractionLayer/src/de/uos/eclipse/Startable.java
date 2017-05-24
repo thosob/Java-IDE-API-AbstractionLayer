@@ -10,12 +10,13 @@ import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.service.event.Event;
 import org.osgi.service.event.EventHandler;
+import org.eclipse.ui.IStartup;
 
-
-public class Startable implements BundleActivator {
+public class Startable implements IStartup {
+	
 	@PostContextCreate
 	void postContextCreate(final IEventBroker eventBroker, IApplicationContext context) {
-        final Shell shell = new Shell(SWT.SHELL_TRIM);
+   /*     final Shell shell = new Shell(SWT.SHELL_TRIM);
 
         // register for startup completed event and close the shell
         eventBroker.subscribe(UIEvents.UILifeCycle.APP_STARTUP_COMPLETE,
@@ -29,25 +30,12 @@ public class Startable implements BundleActivator {
                 });
         // close static splash screen
         context.applicationRunning();
-        shell.open();
+        shell.open(); */
     }
 	
-	
-	public static void invokeStart(){
-		System.out.println("Breakpoint");
-	}
-
-
 	@Override
-	public void start(BundleContext arg0) throws Exception {
-		System.out.println("Breakpoint");
-		
-	}
-
-
-	@Override
-	public void stop(BundleContext arg0) throws Exception {
-		System.out.println("Breakpoint");
+	public void earlyStartup() {
+		System.out.println("just a small test");
 		
 	}
 	 

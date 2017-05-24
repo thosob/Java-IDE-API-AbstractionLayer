@@ -6,5 +6,5 @@ Bundle-Version: 1.0.0.qualifier
 Export-Package: de.uos.application
 Bundle-Vendor: de.uos
 AutoUpdate-Show-In-Client: true
-Bundle-Activator: de.uos.application.Main
+
 

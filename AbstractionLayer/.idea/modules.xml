@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AbstractionLayer.iml" filepath="$PROJECT_DIR$/AbstractionLayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AbstractionLayer_main.iml" filepath="$PROJECT_DIR$/.idea/modules/AbstractionLayer_main.iml" group="AbstractionLayer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AbstractionLayer_test.iml" filepath="$PROJECT_DIR$/.idea/modules/AbstractionLayer_test.iml" group="AbstractionLayer" />
     </modules>
   </component>
 </project>

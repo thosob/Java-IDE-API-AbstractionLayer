@@ -9,14 +9,17 @@ plugins {
     id "org.jetbrains.intellij" version "0.2.5"
 }
 
-dependencies{  
-    compile fileTree(dir: 'lib', include: '*.jar')   
-}
-
 apply plugin: 'java'
 
 apply plugin: 'idea'
 apply plugin: 'org.jetbrains.intellij'
+
+dependencies{
+    compile( group: 'org.osgi', name: 'org.osgi.core', version: '4.3.0')
+    runtime( group: 'org.osgi', name: 'org.osgi.core', version: '4.3.0')
+    //compile fileTree(dir: 'lib', include: '*.jar')
+
+}
 
 intellij {
     version System.getenv().getOrDefault('IDEA_VERSION', 'IC-2017.1') //IntelliJ IDEA 2016.3 dependency; for a full list of IntelliJ IDEA releases please see https://www.jetbrains.com/intellij-repository/releases
@@ -38,7 +41,13 @@ test {
     }
 
 }
-
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
  
 group 'de.uos'
 version '1.0' // Plugin version
