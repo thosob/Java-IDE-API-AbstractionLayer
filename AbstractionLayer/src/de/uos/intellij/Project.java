@@ -15,12 +15,7 @@ public class Project {
      * @return Project for ide to work further with
      */
     private static de.uos.ide.Project setProjectData(com.intellij.openapi.project.Project intellijProject){
-
-        de.uos.ide.Project ideProject = new de.uos.ide.Project();
-        ideProject.setProjectName(intellijProject.getName());
-        ideProject.setProjectPath(intellijProject.getProjectFilePath());
-
-        return  ideProject;
+        return  new de.uos.ide.Project(intellijProject);
     }
 
     /**

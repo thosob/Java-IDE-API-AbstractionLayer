@@ -1,5 +1,6 @@
 package de.uos.ide;
 
+
 /**
  * @brief Project-Class
  */
@@ -7,9 +8,16 @@ public class Project {
 
     private String ProjectName;
     private String ProjectPath;
+    private ProjectState ProjectState;
 
-    public Project(){
+    /**
+     * @brief morph-constructor
+     * @param intellijProject
+     */
+    public Project(com.intellij.openapi.project.Project intellijProject){
 
+        this.ProjectName = intellijProject.getName();
+        this.ProjectPath = intellijProject.getProjectFilePath();
     }
 
     /**
@@ -79,5 +87,13 @@ public class Project {
      */
     public void setProjectPath(String projectPath) {
         ProjectPath = projectPath;
+    }
+
+    public ProjectState getProjectState() {
+        return ProjectState;
+    }
+
+    public void setProjectState(ProjectState projectState) {
+        ProjectState = projectState;
     }
 }
