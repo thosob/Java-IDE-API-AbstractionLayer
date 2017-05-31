@@ -1,5 +1,8 @@
 package de.uos.application;
 
+import com.intellij.openapi.actionSystem.AnActionEvent;
+
+import org.eclipse.ui.PlatformUI;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
@@ -26,6 +29,7 @@ public class Main implements BundleActivator {
     @Override
     public void start(BundleContext arg0) throws Exception {
         Main(null, 0);
+        PlatformUI.getWorkbench().getActiveWorkbenchWindow().getActivePage();
 
     }
 

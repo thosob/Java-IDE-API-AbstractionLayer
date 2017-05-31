@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: AbstractionLayer
+Bundle-SymbolicName: AbstractionLayer;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Export-Package: de.uos.AbstractionLayer,
+ de.uos.eclipse,
+ de.uos.ide
+Bundle-Vendor: de.uos
+AutoUpdate-Show-In-Client: true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

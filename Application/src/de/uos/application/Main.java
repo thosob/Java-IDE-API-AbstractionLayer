@@ -1,8 +1,8 @@
 package de.uos.application;
 
-import com.intellij.openapi.actionSystem.AnActionEvent;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
+import de.uos.ide.Project;
 
 /**
  * @brief Start method
@@ -16,7 +16,12 @@ public class Main implements BundleActivator {
      * @param argv
      */
     public static void Main(String[] args, int argv) {
-        System.out.println("test");
+
+        System.out.println("Main Method");
+
+        //de.uos.ide.Project.createProject("new Project", "newProject");
+        Project proj = Project.openProject("C:\\Users\\thoma\\SpezialProjekt.iml");
+        System.out.println(proj.closeProject());
     }
 
     /**
@@ -27,7 +32,7 @@ public class Main implements BundleActivator {
     @Override
     public void start(BundleContext arg0) throws Exception {
         Main(null, 0);
-
+       
     }
 
     /**

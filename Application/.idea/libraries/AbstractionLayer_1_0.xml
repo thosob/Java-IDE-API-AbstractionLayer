@@ -1,10 +1,9 @@
 <component name="libraryTable">
   <library name="AbstractionLayer-1.0">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../AbstractionLayer/build/libs/AbstractionLayer-1.0.jar!/" />
+      <root url="file://$PROJECT_DIR$/../AbstractionLayer/build/classes/main-instrumented" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
-    <jarDirectory url="jar://$PROJECT_DIR$/../AbstractionLayer/build/libs/AbstractionLayer-1.0.jar!/" recursive="false" />
   </library>
 </component>

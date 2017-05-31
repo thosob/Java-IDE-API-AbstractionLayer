@@ -1,7 +1,6 @@
 buildscript {
     repositories {
         maven { url 'http://dl.bintray.com/jetbrains/intellij-plugin-service' }
-        mavenCentral()
     }
 }
 
@@ -13,6 +12,10 @@ apply plugin: 'java'
 
 apply plugin: 'idea'
 apply plugin: 'org.jetbrains.intellij'
+
+repositories{
+    mavenCentral()
+}
 
 dependencies{
     compile( group: 'org.osgi', name: 'org.osgi.core', version: '4.3.0')
@@ -45,6 +48,8 @@ sourceSets {
     main {
         java {
             srcDir 'src'
+            exclude '**/eclipse/*'
+            exclude '**/netbeans/*'
         }
     }
 }
