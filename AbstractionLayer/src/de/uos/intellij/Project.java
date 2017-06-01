@@ -14,8 +14,13 @@ public class Project {
      * @brief transforms intellij project to abstraction layer project
      * @return Project for ide to work further with
      */
-    private static de.uos.ide.Project setProjectData(com.intellij.openapi.project.Project intellijProject){
-        return  new de.uos.ide.Project(intellijProject);
+    public static de.uos.ide.Project transformProject(com.intellij.openapi.project.Project intellijProject){
+
+        de.uos.ide.Project ideProject = new de.uos.ide.Project();
+        ideProject.setProjectName(intellijProject.getName());
+        ideProject.setProjectPath(intellijProject.getProjectFilePath());
+
+        return  ideProject;
     }
 
     /**
@@ -28,7 +33,7 @@ public class Project {
 
         ProjectManager projectManager = ProjectManager.getInstance();
         com.intellij.openapi.project.Project intellijProject =  projectManager.createProject(projectName, path);
-        return setProjectData(intellijProject);
+        return transformProject(intellijProject);
     }
 
     /**
@@ -46,7 +51,7 @@ public class Project {
             System.err.println("IOException: could not open project. " + e.getMessage());
         }
         finally {
-            return setProjectData(project);
+            return transformProject(project);
         }
     }
 

@@ -1,4 +1,4 @@
-package unit.src;
+package unit.src.de.uos.intellij.test;
 
 import de.uos.ide.Project;
 import com.intellij.testFramework.fixtures.LightCodeInsightFixtureTestCase;
@@ -27,6 +27,17 @@ public class ProjectTests extends LightCodeInsightFixtureTestCase {
         Project project = de.uos.intellij.Project.openProject("/test/data/SpezialProjekt.iml");
         //make sure it's not null
         assertNotNull(project);
+    }
+
+    /**
+     * @brief this test checks, if the reflections working correctly in ide package
+     */
+    public void testIDEFunctions(){
+        Project project = de.uos.ide.Project.openProject("/test/data/SpezialProjekt.iml");
+        assertNotNull(project);
+        //Test reflection in ide function
+        boolean closed = project.closeProject();
+        assertTrue(closed);
     }
 
     public void testListener(){

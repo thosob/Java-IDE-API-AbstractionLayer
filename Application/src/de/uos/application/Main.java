@@ -2,7 +2,6 @@ package de.uos.application;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
-import de.uos.ide.Project;
 
 /**
  * @brief Start method
@@ -19,9 +18,6 @@ public class Main implements BundleActivator {
 
         System.out.println("Main Method");
 
-        //de.uos.ide.Project.createProject("new Project", "newProject");
-        Project proj = Project.openProject("C:\\Users\\thoma\\SpezialProjekt.iml");
-        System.out.println(proj.closeProject());
     }
 
     /**

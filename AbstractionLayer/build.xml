@@ -27,7 +27,7 @@
             <processorpath refid="processor.cp"/>
             <exclude name="**/eclipse/**"></exclude>
             <exclude name="**/META-INF/**"></exclude>
-            <exclude name="**/intellij/**"></exclude>
+            <exclude name="**/intellij/**"></exclude>            
             <exclude name="build.gradle"></exclude>
             <exclude name="AbstractionLayer.iml"></exclude>
             <exclude name=".classpath"></exclude>

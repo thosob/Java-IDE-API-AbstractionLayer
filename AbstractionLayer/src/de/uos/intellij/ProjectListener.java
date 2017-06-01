@@ -16,7 +16,7 @@ public class ProjectListener implements ProjectManagerListener {
      */
     @Override
     public void projectOpened(Project project){
-        de.uos.ide.Project ideProject = new de.uos.ide.Project(project);
+        de.uos.ide.Project ideProject = de.uos.intellij.Project.transformProject(project);
         ideProject.setProjectState(ProjectState.opened);
         de.uos.ide.ProjectListener.getInstance().changeProject(ideProject);
     }
@@ -26,7 +26,7 @@ public class ProjectListener implements ProjectManagerListener {
      */
     @Override
     public void projectClosed(Project project) {
-        de.uos.ide.Project ideProject = new de.uos.ide.Project(project);
+        de.uos.ide.Project ideProject = de.uos.intellij.Project.transformProject(project);
         ideProject.setProjectState(ProjectState.closed);
         de.uos.ide.ProjectListener.getInstance().changeProject(ideProject);
     }
@@ -36,7 +36,7 @@ public class ProjectListener implements ProjectManagerListener {
      */
     @Override
     public void projectClosing(Project project) {
-        de.uos.ide.Project ideProject = new de.uos.ide.Project(project);
+        de.uos.ide.Project ideProject = de.uos.intellij.Project.transformProject(project);
         ideProject.setProjectState(ProjectState.closing);
         de.uos.ide.ProjectListener.getInstance().changeProject(ideProject);
     }
