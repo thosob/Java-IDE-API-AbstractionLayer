@@ -9,6 +9,16 @@
     <property name="src" location="src/" />
     <property name="build" location="build/" />
     <property name="dist" location ="dist/" />
+    <path id="test.@{test.type}.cp">
+        <!-- Cannot use <path refid="cp"/> since that uses ${module.classpath} and we want ${module.run.classpath}: -->
+        <pathelement path="${test.@{test.type}.compile.cp}"/>
+        <pathelement path="${cp.extra}"/>
+        <pathelement location="${cluster}/${module.jar}"/>
+        <path refid="test.unit.lib.cp"/>
+        <!-- for compatibility with property based classpath-->
+        <pathelement path="${module.run.classpath}"/>
+        <pathelement path="${test.@{test.type}.cp.extra}"/>
+    </path>
     <description>Builds, tests, and runs the project
         de.uos.AbstractionLayer.</description>
     <import file="nbproject/build-impl.xml" />
@@ -44,6 +54,56 @@
         <antcall target="mvn" />
     </target>
     
+    <macrodef name="do-test-build">
+        <attribute name="test.type"/>
+        <sequential>
+            <fail >
+                Missing test dependency
+                Runtime classpath: ${test.@{test.type}.runtime.cp}
+                Compile classpath: ${test.@{test.type}.compile.cp}
+                <condition>
+                    <or>
+                        <contains string="${test.@{test.type}.runtime.cp}" substring="-missing-Module-Entries-:" />
+                        <contains string="${test.@{test.type}.compile.cp}" substring="-missing-Module-Entries-:" />
+                    </or>
+                </condition>
+            </fail>
+            <mkdir dir="${build.test.@{test.type}.classes.dir}"/>
+            <depend srcdir="${test.@{test.type}.src.dir}" destdir="${build.test.@{test.type}.classes.dir}" cache="${build.test.@{test.type}.dir}/depcache">
+                <classpath refid="test.@{test.type}.cp"/>
+            </depend>
+            <property name="test.excludes" value=""/> <!-- # 113770 -->
+            <nb-javac srcdir="${test.@{test.type}.src.dir}" destdir="${build.test.@{test.type}.classes.dir}" excludes="${test.excludes}"
+                      debug="true" deprecation="${build.compiler.deprecation}" encoding="UTF-8"
+                      source="${javac.source}" target="${javac.target}" optimize="${build.compiler.optimize}" includeantruntime="false">
+                <classpath refid="test.@{test.type}.cp"/>
+                <compilerarg line="${javac.compilerargs}"/>
+                <processorpath refid="test.@{test.type}.cp"/>
+                <exclude name="**/eclipse/**"></exclude>
+                <exclude name="**/META-INF/**"></exclude>
+                <exclude name="**/intellij/**"></exclude>            
+                <exclude name="build.gradle"></exclude>
+                <exclude name="AbstractionLayer.iml"></exclude>
+                <exclude name=".classpath"></exclude>
+                <exclude name=".project"></exclude>
+                
+            </nb-javac>
+            <processjsannotation classes="${build.test.@{test.type}.classes.dir}" asm="${asm.jar}">
+                <classpath refid="test.@{test.type}.cp"/>
+            </processjsannotation>
+            <copy todir="${build.test.@{test.type}.classes.dir}">
+                <fileset dir="${test.@{test.type}.src.dir}">
+                    <exclude name="**/*.java"/>
+                </fileset>
+            </copy>
+            <delete dir="${build.test.@{test.type}.dir}/data"/>
+            <copy todir="${build.test.@{test.type}.dir}">
+                <fileset dir="${test.@{test.type}.dir}">
+                    <include name="data/**"/>
+                </fileset>
+            </copy>
+        </sequential>
+    </macrodef>
     <!-- being platform independent, but maven must be installed in environment -->
     <condition property="Windows">
         <os family="windows" />

@@ -3,6 +3,8 @@ package de.uos.ide;
 import java.lang.reflect.Method;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.netbeans.spi.project.ProjectServiceProvider;
+import org.netbeans.spi.project.ui.ProjectOpenedHook;
 
 
 /**
@@ -31,10 +33,10 @@ public class Project {
 
     /**
      * @brief opens a project with it's project name
-     * @param projectName
+     * @param pathToProject path to the project
      * @return the opened project
      */
-    public static Project openProject(String projectName){
+    public static Project openProject(String pathToProject){
         if(IDEInformation.getIDE().equalsIgnoreCase("intellij")){
             try {
                 //Getting class
@@ -46,7 +48,24 @@ public class Project {
                 //define it as accessible
                 method.setAccessible(true);
                 //use reflection to invoke static method and cast to bool
-                return (Project) method.invoke(obj, projectName);
+                return (Project) method.invoke(obj, pathToProject);
+                //using generic exception, because list of possible exceptions is long, even for multi catch
+            } catch (Exception ex) {
+                Logger.getLogger(Project.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        if(IDEInformation.getIDE().equalsIgnoreCase("netbeans")){
+            try{
+                //Getting class
+                Class cls = Class.forName("de.uos.netbeans.Project");
+                //Getting method
+                Method method =  cls.getDeclaredMethod("openProject", String.class);
+                //Get one instance of that class
+                Object obj = cls.newInstance();
+                //define it as accessible
+                method.setAccessible(true);
+                //use reflection to invoke static method and cast to bool
+                return (Project) method.invoke(obj, pathToProject);
                 //using generic exception, because list of possible exceptions is long, even for multi catch
             } catch (Exception ex) {
                 Logger.getLogger(Project.class.getName()).log(Level.SEVERE, null, ex);
@@ -60,6 +79,9 @@ public class Project {
      * @return true if closed
      */
     public boolean closeProject(){
+        //TODO: Reflection mechanism can be drawn out and refactored
+        // either with an interface or an abstract class to force 
+        // same method signatures
         if(IDEInformation.getIDE().equalsIgnoreCase("intellij")){
             try {
                 //Getting class
@@ -71,7 +93,30 @@ public class Project {
                 //define it as accessible
                 method.setAccessible(true);
                 //use reflection to invoke static method and cast to bool
-                return (boolean)method.invoke(obj, this.ProjectName);
+                if((boolean)method.invoke(obj, this.ProjectName)){
+                    this.ProjectState = ProjectState.closed;
+                    return true;
+                }
+                //using generic exception, because list of possible exceptions is long, even for multi catch
+            } catch (Exception ex) {
+                Logger.getLogger(Project.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        if(IDEInformation.getIDE().equalsIgnoreCase("netbeans")){
+            try {
+                //Getting class
+                Class cls = Class.forName("de.uos.netbeans.Project");
+                //Getting method
+                Method method =  cls.getDeclaredMethod("closeProject", String.class, String.class);
+                //Get one instance of that class
+                Object obj = cls.newInstance();
+                //define it as accessible
+                method.setAccessible(true);
+                //use reflection to invoke static method and cast to bool
+                if( (boolean)method.invoke(obj, this.ProjectName, this.ProjectPath)){
+                    this.ProjectState = ProjectState.closed;
+                    return true;
+                }                
                 //using generic exception, because list of possible exceptions is long, even for multi catch
             } catch (Exception ex) {
                 Logger.getLogger(Project.class.getName()).log(Level.SEVERE, null, ex);
@@ -120,3 +165,5 @@ public class Project {
         ProjectState = projectState;
     }
 }
+
+

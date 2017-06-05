@@ -28,7 +28,9 @@ public class Starter implements ApplicationComponent {
 
         ProjectManager projectManager = ProjectManager.getInstance();
         projectManager.addProjectManagerListener(new ProjectListener());
-
+        
+        //jump into the application
+        de.uos.application.Main.Main(null, 0);
 
     }
 
