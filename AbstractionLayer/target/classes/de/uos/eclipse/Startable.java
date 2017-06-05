@@ -1,43 +1,35 @@
 package de.uos.eclipse;
 
-import org.eclipse.e4.core.services.events.IEventBroker;
-import org.eclipse.e4.ui.workbench.UIEvents;
-import org.eclipse.e4.ui.workbench.lifecycle.PostContextCreate;
-import org.eclipse.equinox.app.IApplicationContext;
-import org.eclipse.swt.SWT;
-import org.eclipse.swt.widgets.Shell;
+import org.eclipse.core.resources.IResourceChangeListener;
+import org.eclipse.core.resources.IWorkspace;
+import org.eclipse.core.resources.ResourcesPlugin;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
-import org.osgi.service.event.Event;
-import org.osgi.service.event.EventHandler;
-import org.eclipse.ui.IStartup;
 
-public class Startable implements IStartup {
-	
-	@PostContextCreate
-	void postContextCreate(final IEventBroker eventBroker, IApplicationContext context) {
-   /*     final Shell shell = new Shell(SWT.SHELL_TRIM);
+public class Startable implements BundleActivator {
 
-        // register for startup completed event and close the shell
-        eventBroker.subscribe(UIEvents.UILifeCycle.APP_STARTUP_COMPLETE,
-                new EventHandler() {
-                    @Override
-                    public void handleEvent(Event event) {
-                        shell.close();
-                        shell.dispose();
-                        eventBroker.unsubscribe(this);
-                    }
-                });
-        // close static splash screen
-        context.applicationRunning();
-        shell.open(); */
-    }
+	private IResourceChangeListener ProjectListener;
+	private IWorkspace Workspace;
 	
 	@Override
-	public void earlyStartup() {
-		System.out.println("just a small test");
-		
+	public void start(BundleContext context) throws Exception {
+		de.uos.ide.IDEInformation.setIDE("eclipse");	
+		//here we register all eclipse listeners
+		//get workspace
+		Workspace = ResourcesPlugin.getWorkspace();
+		//create new listener
+		ProjectListener = new ProjectListener();
+		//assign listener to workspace	
+		Workspace.addResourceChangeListener(ProjectListener);
 	}
-	 
+
+	@Override
+	public void stop(BundleContext context) throws Exception {
+		//clean up the listeners after shutdown to avoid memory leaks
+		Workspace.removeResourceChangeListener(ProjectListener);		
+	}
+	
+
+
 
 }

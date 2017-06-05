@@ -1,5 +1,3 @@
- <?xml version="1.0" encoding="UTF-8"?>
-   <?eclipse version="3.0"?>
 <plugin id="de.uos.AbstraticionLayer" name="Abstraction Layer"
 	class="de.uos.eclipse.Startable" version="1.0">
 	<runtime>
@@ -8,7 +6,5 @@
 	<requires>
 		<import plugin="org.eclipse.core.runtime" />
 	</requires>
-	<extension point="org.eclipse.ui.startup">
-		<startup class="org.eclipse.example.StartupClass" />
-	</extension>
+	
 </plugin>
