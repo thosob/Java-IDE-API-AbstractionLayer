@@ -3,7 +3,6 @@
 	<name>AbstractionLayer</name>
 	<comment></comment>
 	<projects>
-		<project>Application</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
