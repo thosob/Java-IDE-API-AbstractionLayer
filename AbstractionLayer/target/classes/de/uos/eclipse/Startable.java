@@ -21,6 +21,11 @@ public class Startable implements BundleActivator {
 		ProjectListener = new ProjectListener();
 		//assign listener to workspace	
 		Workspace.addResourceChangeListener(ProjectListener);
+		de.uos.ide.Project project = de.uos.ide.Project.openProject("SimpleTest");
+		project.closeProject();
+		
+		
+		
 	}
 
 	@Override

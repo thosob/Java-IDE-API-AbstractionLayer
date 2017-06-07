@@ -71,6 +71,23 @@ public class Project {
                 Logger.getLogger(Project.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
+        if(IDEInformation.getIDE().equalsIgnoreCase("eclipse")){
+        	try{
+                //Getting class
+                Class cls = Class.forName("de.uos.eclipse.Project");
+                //Getting method
+                Method method =  cls.getDeclaredMethod("openProject", String.class);
+                //Get one instance of that class
+                Object obj = cls.newInstance();
+                //define it as accessible
+                method.setAccessible(true);
+                //use reflection to invoke static method and cast to bool
+                return (Project) method.invoke(obj, pathToProject);
+                //using generic exception, because list of possible exceptions is long, even for multi catch
+            } catch (Exception ex) {
+                Logger.getLogger(Project.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }        
         return null;
     }
 
@@ -117,6 +134,23 @@ public class Project {
                     this.ProjectState = ProjectState.closed;
                     return true;
                 }                
+                //using generic exception, because list of possible exceptions is long, even for multi catch
+            } catch (Exception ex) {
+                Logger.getLogger(Project.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        if(IDEInformation.getIDE().equalsIgnoreCase("eclipse")){
+        	try{
+                //Getting class
+                Class cls = Class.forName("de.uos.eclipse.Project");
+                //Getting method
+                Method method =  cls.getDeclaredMethod("closeProject", String.class);
+                //Get one instance of that class
+                Object obj = cls.newInstance();
+                //define it as accessible
+                method.setAccessible(true);
+                //use reflection to invoke static method and cast to bool
+                return (boolean) method.invoke(obj, this.ProjectName);
                 //using generic exception, because list of possible exceptions is long, even for multi catch
             } catch (Exception ex) {
                 Logger.getLogger(Project.class.getName()).log(Level.SEVERE, null, ex);

@@ -25,4 +25,7 @@ Bundle-ClassPath: AbstractionLayer.jar,
 Require-Bundle: org.eclipse.osgi,
  org.eclipse.core.resources,
  org.eclipse.equinox.registry,
- org.eclipse.core.runtime
+ org.eclipse.core.runtime,
+ org.eclipse.jdt.junit;bundle-version="3.9.0",
+ org.eclipse.jdt.junit.runtime;bundle-version="3.4.600",
+ org.junit
