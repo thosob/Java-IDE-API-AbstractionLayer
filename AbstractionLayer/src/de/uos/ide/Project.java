@@ -148,7 +148,7 @@ public class Project {
                 //define it as accessible
                 method.setAccessible(true);
                 //use reflection to invoke static method and cast to bool
-                if( (boolean)method.invoke(obj, this.ProjectName, this.ProjectPath)){
+                if( (boolean)method.invoke(obj, this.ProjectName)){
                     this.ProjectState = ProjectState.closed;
                     return true;
                 }
