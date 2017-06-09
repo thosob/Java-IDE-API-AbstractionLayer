@@ -18,20 +18,30 @@ public class Project {
 	 */
 	public static de.uos.ide.Project transformProject(IProject project) {
 		de.uos.ide.Project ideProject = null;
+		
 		if (project != null) {
 			// Getting project information over project utils
 			IProjectDescription description;
 			try {
-				// getting description of the project
-				description = project.getDescription();
-
-				// create new abstraction layer project
-				ideProject = new de.uos.ide.Project();
-				if (description != null) {
-					// get name from project information and set it
-					ideProject.setProjectName(description.getName());
-					// get path from eclipse project and set it
-					ideProject.setProjectPath(description.getLocationURI().getPath());
+				//if the project is open we can get all relevant information from it  
+				if(project.isOpen()){
+					// getting description of the project
+					description = project.getDescription();
+	
+					// create new abstraction layer project
+					ideProject = new de.uos.ide.Project();
+					if (description != null) {
+						// get name from project information and set it
+						ideProject.setProjectName(description.getName());
+						// get path from eclipse project and set it
+						ideProject.setProjectPath(description.getLocationURI().getPath());
+					}
+				}
+				else{
+					//if not
+					ideProject = new de.uos.ide.Project();
+					ideProject.setProjectName(project.getName());
+					ideProject.setProjectPath(project.getFullPath().toString());
 				}
 			} catch (CoreException e) {
 				e.printStackTrace();
@@ -62,11 +72,11 @@ public class Project {
 			if (eclipseProject != null) {
 				eclipseProject.open(null);
 				ideProject = transformProject(eclipseProject);
+				ideProject.setProjectState(ProjectState.opened);				
 			}
 		} catch (CoreException e) {
 			System.err.println("de.uos.eclipse.Project - error opening eclipse project");
-		}
-		ideProject.setProjectState(ProjectState.opened);
+		}		
 		// return null if not successfully executed else give back the project
 		return ideProject;
 	}

@@ -24,66 +24,40 @@ public class ProjectListener implements IResourceChangeListener {
 	@Override
 	public void resourceChanged(IResourceChangeEvent event) {
 
-		if (event == null || event.getDelta() == null)
+		if (event == null || event.getDelta() == null) {
 			return;
-		try {
-			// get event data by using delta visitor
-			event.getDelta().accept(new IResourceDeltaVisitor() {
-				// using eclipse visitor pattern
-				public boolean visit(final IResourceDelta delta) throws CoreException {
-					IResource resource = delta.getResource();
-					IResourceDelta[] children = delta.getAffectedChildren();
-					IProject iproject = null;
-
-					for (IResourceDelta child : children) {
-						// Check if project and something has changed
-						if (delta.getKind() == IResourceDelta.CHANGED) {
-							/**
-							 * IProject[] projects =
-							 * resource.getWorkspace().getRoot().getProjects();
-							 * 
-							 * for (IProject tmpProject : projects) { if
-							 * (tmpProject.getFullPath().toString().equals(path))
-							 * { iproject = tmpProject; } }
-							 **/
-							if (child.getResource().getProject() != null) {
-								iproject = child.getResource().getProject();
-
-								// IResourceDelta.OPEN is the notifier of open
-								// and
-								// close events
-								if (iproject.isOpen()) {
-
-									// if open transform project to ide project
-									de.uos.ide.Project project = de.uos.eclipse.Project.transformProject(iproject);
-									// mark it as open
-									project.setProjectState(ProjectState.opened);
-									// and notify observable
-									de.uos.ide.ProjectListener.getInstance().changeProject(project);
-									break;
-								} else {
-									// if closed, get ide project
-									de.uos.ide.Project project = de.uos.eclipse.Project.transformProject(iproject);
-									// set state to closed
-									project.setProjectState(ProjectState.closed);
-									// notify observable
-									de.uos.ide.ProjectListener.getInstance().changeProject(project);
-									break;
-								}							
-							}
-							// mark as successful visit
-							return true;
-						}
-					}
-					return false;
-
-				}
-
-			});
-
-		} catch (CoreException e) {
-			e.printStackTrace();
 		}
 
+		try {
+			event.getDelta().accept(new IResourceDeltaVisitor() {
+				public boolean visit(final IResourceDelta delta) throws CoreException {
+					IResource resource = delta.getResource();
+					if (((resource.getType() & IResource.PROJECT) != 0)
+							&& delta.getKind() == IResourceDelta.CHANGED
+							&& ((delta.getFlags() & IResourceDelta.OPEN) != 0)) {
+
+						IProject iproject = (IProject) resource;
+						if (iproject.isOpen()) {
+							// if open transform project to ide project
+							de.uos.ide.Project project = de.uos.eclipse.Project.transformProject(iproject);
+							// mark it as open
+							project.setProjectState(ProjectState.opened);
+							// and notify observable
+							de.uos.ide.ProjectListener.getInstance().changeProject(project);
+							System.out.println("Project opening was notifiyed.");
+						} else {
+							de.uos.ide.Project project = de.uos.eclipse.Project.transformProject(iproject);
+							project.setProjectState(ProjectState.closed);
+							de.uos.ide.ProjectListener.getInstance().changeProject(project);
+							System.out.println("Project was closed.");
+						}
+					}
+					return true;
+				}
+			});
+		} catch (CoreException e) {
+			e.printStackTrace();
+
+		}
 	}
 }
