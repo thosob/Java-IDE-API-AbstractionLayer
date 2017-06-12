@@ -33,7 +33,7 @@ public class ProjectTests extends LightCodeInsightFixtureTestCase {
      * @brief this test checks, if the reflections working correctly in ide package
      */
     public void testIDEFunctions(){
-        Project project = de.uos.ide.Project.openProject("/test/data/SpezialProjekt.iml");
+        Project project = de.uos.ide.Project.openProject("/test/data/SpezialProjekt.iml", "");
         assertNotNull(project);
         //Test reflection in ide function
         boolean closed = project.closeProject();
