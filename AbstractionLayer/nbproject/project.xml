@@ -7,14 +7,6 @@
             <suite-component/>
             <module-dependencies>
                 <dependency>
-                    <code-name-base>de.uos.application</code-name-base>
-                    <build-prerequisite/>
-                    <compile-dependency/>
-                    <run-dependency>
-                        <specification-version>1.0</specification-version>
-                    </run-dependency>
-                </dependency>
-                <dependency>
                     <code-name-base>org.netbeans.libs.osgi</code-name-base>
                     <build-prerequisite/>
                     <compile-dependency/>
@@ -149,11 +141,11 @@
                 </test-type>
             </test-dependencies>
             <public-packages>
-                <package>de.uos.AbstractionLayer</package>
                 <package>de.uos.eclipse</package>
-                <package>de.uos.netbeans</package>
-                <package>de.uos.intellij</package>
                 <package>de.uos.ide</package>
+                <package>de.uos.intellij</package>
+                <package>de.uos.netbeans</package>
+                <package>de.uos.util</package>
             </public-packages>
         </data>
     </configuration>

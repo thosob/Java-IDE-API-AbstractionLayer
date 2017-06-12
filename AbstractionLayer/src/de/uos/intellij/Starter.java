@@ -13,6 +13,7 @@ import com.intellij.openapi.project.Project;
 import com.intellij.openapi.project.ProjectManager;
 import org.jetbrains.annotations.NotNull;
 import de.uos.ide.IDEInformation;
+import java.lang.reflect.Method;
 
 /**
  * @brief implements the application start of intellij
@@ -28,11 +29,19 @@ public class Starter implements ApplicationComponent {
 
         ProjectManager projectManager = ProjectManager.getInstance();
         projectManager.addProjectManagerListener(new ProjectListener());
-        
-        //jump into the application
-        de.uos.application.Main.Main(null, 0);
+        try {
+            //jumping into our main access point. The main method
+            //this has to be improved
+            Class<?> cls = Class.forName(de.uos.util.Settings.startClass);
+            Method meth = cls.getMethod(de.uos.util.Settings.startMethod, String[].class);
+            meth.invoke((Object) de.uos.util.Settings.startParametersCount, (Object[]) de.uos.util.Settings.startParameters); // static method doesn't have an instance
 
+        } catch (Exception ex) { //having 6 catches doesn't look good
+            System.err.println(ex);
+        }
     }
+
+    
 
     @Override
     public void disposeComponent() {

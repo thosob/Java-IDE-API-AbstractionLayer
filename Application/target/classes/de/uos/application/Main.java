@@ -14,9 +14,9 @@ public class Main implements BundleActivator {
      * @param args
      * @param argv
      */
-    public static void Main(String[] args, int argv) {
-
-        System.out.println("Main Method");
+    public static void Main(String[] args, int argv) {        
+        //Open test file to ensure, that application can use the abstraction layer
+        de.uos.ide.Project.openProject("C:\\Users\thoma\\eclipse-test-workspace\\SimpleTest\\", "");
         
     }
 

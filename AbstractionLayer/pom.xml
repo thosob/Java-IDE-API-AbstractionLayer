@@ -145,7 +145,7 @@
 						<phase>install</phase>
 						<goals>
 							<!-- goal has to be "invoke" to start -->
-							<!-- <goal>invoke</goal> -->
+							<goal>invoke</goal>
 						</goals>
 					</execution>
 				</executions>

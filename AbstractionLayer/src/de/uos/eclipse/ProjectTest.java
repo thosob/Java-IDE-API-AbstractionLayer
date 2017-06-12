@@ -40,7 +40,7 @@ public class ProjectTest {
 	@Test
 	public void testOpenProject() {
 
-		project = de.uos.ide.Project.openProject(testProject);
+		project = de.uos.ide.Project.openProject("",testProject);
 		assert (project != null);
 		assert (project.getProjectName() != null);
 		assert (project.getProjectState() == de.uos.ide.ProjectState.opened);
@@ -49,7 +49,7 @@ public class ProjectTest {
 
 	@Test
 	public void testCloseProject() {
-		project = de.uos.ide.Project.openProject(testProject);
+		project = de.uos.ide.Project.openProject("",testProject);
 		project.closeProject();
 		assert (project.getProjectState() == de.uos.ide.ProjectState.closed);
 	}
@@ -72,7 +72,7 @@ public class ProjectTest {
 		de.uos.ide.ProjectListener.getInstance().addObserver(observer);
 
 		// Open project
-		project = de.uos.ide.Project.openProject(testProject);
+		project = de.uos.ide.Project.openProject("",testProject);
 		// Assert, that it was opened
 		assert (observer.State == ProjectState.opened);
 		// Close project

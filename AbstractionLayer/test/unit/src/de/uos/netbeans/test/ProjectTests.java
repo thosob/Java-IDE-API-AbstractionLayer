@@ -78,7 +78,7 @@ public class ProjectTests extends NbTestCase {
     }
 
     public void testOpenProject() {
-        de.uos.ide.Project project = de.uos.ide.Project.openProject(projectPath);
+        de.uos.ide.Project project = de.uos.ide.Project.openProject(projectPath, "");
         assertNotNull(project);
         assertNotNull(project.getProjectName());
         assertNotNull(project.getProjectPath());
@@ -86,7 +86,7 @@ public class ProjectTests extends NbTestCase {
     }
 
     public void testCloseProject() {
-        de.uos.ide.Project project = de.uos.ide.Project.openProject(projectPath);
+        de.uos.ide.Project project = de.uos.ide.Project.openProject(projectPath, "");
         assertNotNull(project.getProjectState() == ProjectState.opened);
         assertNotNull (project.closeProject());
     }
@@ -109,7 +109,7 @@ public class ProjectTests extends NbTestCase {
         TestObserver observer = new TestObserver();
         ProjectListener.getInstance().addObserver(observer);
         //Open project
-        Project project = de.uos.ide.Project.openProject(projectPath);
+        Project project = de.uos.ide.Project.openProject(projectPath, "");
         //Assert, that it was opened
         assert(observer.State == ProjectState.opened);
         //Close project

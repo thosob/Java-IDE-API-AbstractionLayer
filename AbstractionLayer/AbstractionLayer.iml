@@ -1,18 +1,1343 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module type="PLUGIN_MODULE" version="4">
-  <component name="DevKit.ModuleBuildProperties" url="file://$MODULE_DIR$/resources/META-INF/plugin.xml" />
+<module relativePaths="true" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
-    <exclude-output />
-    <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/META-INF" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/src/de/uos/eclipse" />
-      <excludeFolder url="file://$MODULE_DIR$/src/de/uos/netbeans" />
+    <exclude-output/>
+    <orderEntry type="inheritedJdk"/>
+    <content url="file://$MODULE_DIR$/">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false"/>
+      <excludeFolder url="file://$MODULE_DIR$/build"/>
+      <excludeFolder url="file://$MODULE_DIR$/.gradle"/>
     </content>
-    <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="gradle-3.5" level="application" />
+    <orderEntry type="sourceFolder" forTests="false"/>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.core/4.3.0/33a703395035eff7833a6a4292cce0e8daf231fd/org.osgi.core-4.3.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.core/4.3.0/f67e4e8e000dd9358871ce929e3eddc1d2946fd7/org.osgi.core-4.3.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/annotations.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/asm-5.0.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/asm-all.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/asm-analysis-5.0.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/asm-tree-5.0.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/automaton.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/batik-all.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/bcprov-jdk15on-155.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/boot.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/bootstrap.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/cglib-nodep-3.2.4.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/cli-parser-1.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/commons-codec-1.9.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/commons-compress-1.10.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/commons-httpclient-3.1-patched.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/commons-logging-1.2.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/commons-net-3.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/coverage-agent.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/coverage-instrumenter.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/coverage-util.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/ecj-4.6.2.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/extensions.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/external-system-rt.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/fluent-hc-4.5.2.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/forms_rt.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/groovy-all-2.4.6.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/gson-2.5.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/guava-19.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/hamcrest-core-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/httpclient-4.5.2.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/httpcore-4.4.5.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/httpmime-4.5.2.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/icons.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/idea.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/idea_rt.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/imgscalr-lib-4.2.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/isorelax.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/javac2.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jaxen-1.1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jayatana-1.2.4.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jcip-annotations.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jdkAnnotations.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jdom.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jediterm-pty-2.5.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jgoodies-common-1.2.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jgoodies-forms.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jgoodies-looks-2.4.2.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jh.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jimfs-1.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jing.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jna-platform.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jna.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jps-builders-6.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jps-builders.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jps-launcher.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jps-model.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jsch-0.1.54.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jsch.agentproxy.connector-factory.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jsch.agentproxy.core.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jsch.agentproxy.pageant.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jsch.agentproxy.sshagent.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jsch.agentproxy.usocket-jna.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jsch.agentproxy.usocket-nc.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jsr173_1.0_api.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/jsr305.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/junit-4.12.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/junit.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/kotlin-reflect.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/kotlin-runtime.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/log4j.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/markdownj-core-0.4.2-SNAPSHOT.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/microba.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/miglayout-core-5.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/miglayout-swing-5.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/nanoxml-2.2.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/nekohtml-1.9.14.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/netty-all-4.1.6.Final.Patched.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/openapi.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/optimizedFileManager.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/oromatcher.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/picocontainer.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/protobuf-2.5.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/proxy-vole_20131209.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/pty4j-0.7.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/purejavacomm.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/resolver.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/resources.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/resources_en.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/rngom-20051226-patched.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/sanselan-0.98-snapshot.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/serviceMessages.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/sherpa-solver.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/slf4j-api-1.7.10.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/slf4j-log4j12-1.7.10.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/snakeyaml-1.17.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/snappy-in-java-0.5.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/sqlite-jdbc-3.8.11.2.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/streamex-0.6.2.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/swingx-core-1.6.2.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/trang-core.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/trove4j.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/util.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/velocity.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/winp-1.23.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/xbean.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/xercesImpl.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/xml-apis-ext.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/xml-apis.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/xmlgraphics-commons-1.5.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/xmlrpc-2.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/xpp3-1.1.4-min.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/lib/xstream-1.4.8.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/plugins/coverage/lib/coverage-report-idea.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/plugins/coverage/lib/coverage-report.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/plugins/coverage/lib/coverage.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/plugins/coverage/lib/coverage_rt.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/plugins/coverage/lib/freemarker.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/plugins/coverage/lib/jacocoagent.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/e6f4c74ac091e55d0ac4e2ad26d91c12a4f23592/ideaIC-2017.1/plugins/coverage/lib/jacocoant.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/thoma/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2017.1/cd26e2b874326c2ef57002c474b1652842ccf51c/ideaIC-2017.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="RUNTIME">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jdk1.8.0_131/lib/tools.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES/>
+      </library>
+    </orderEntry>
   </component>
+  <component name="ModuleRootManager"/>
 </module>

@@ -3,8 +3,6 @@ package de.uos.ide;
 import java.lang.reflect.Method;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.netbeans.spi.project.ProjectServiceProvider;
-import org.netbeans.spi.project.ui.ProjectOpenedHook;
 
 
 /**
@@ -32,11 +30,12 @@ public class Project {
     }
 
     /**
+     * @param projectName Name of the project, especially important to eclipse plugin api
      * @brief opens a project with it's project name
      * @param pathToProject path to the project
      * @return the opened project
      */
-    public static Project openProject(String pathToProject){
+    public static Project openProject(String pathToProject, String projectName){
         if(IDEInformation.getIDE().equalsIgnoreCase("intellij")){
             try {
                 //Getting class
@@ -82,7 +81,7 @@ public class Project {
                 //define it as accessible
                 method.setAccessible(true);
                 //use reflection to invoke static method and cast to bool
-                return (Project) method.invoke(obj, pathToProject);
+                return (Project) method.invoke(obj, projectName);
                 //using generic exception, because list of possible exceptions is long, even for multi catch
             } catch (Exception ex) {
                 Logger.getLogger(Project.class.getName()).log(Level.SEVERE, null, ex);

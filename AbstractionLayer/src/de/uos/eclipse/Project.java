@@ -61,8 +61,7 @@ public class Project {
 	 */
 	public static de.uos.ide.Project openProject(String projectName) {
 		// Get root of the workspace
-		IWorkspaceRoot root = ResourcesPlugin.getWorkspace().getRoot();
-		IProject[] projects = root.getProjects();
+		IWorkspaceRoot root = ResourcesPlugin.getWorkspace().getRoot();		
 		// get all project
 		IProject eclipseProject = root.getProject(projectName);
 		de.uos.ide.Project ideProject = null;
